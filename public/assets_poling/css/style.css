@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #121A1F;
+}
+/* NAVBAR */
+@media(max-width: 2000px){
+    nav.back-navbar{
+        background-color: #121A1F;
+        height: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 0px 0px 4px 4px;
+    }
+    #navbar-kategori{
+        margin-left: 50px;
+        margin-top: 5px;
+        margin-right: 50px;
+        padding: 5px;
+    }
+    #navbar-kategori .nav-link{
+        color: white;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    /* navbar-auth */
+    .navbar-auth{
+        position: relative;
+    }
+    /* Notif */
+    #bell .bell{
+        color: white;
+        font-size: 25px;
+        padding: 20px;
+    }
+    .bell{
+        padding-right: 25px !important;
+    }
+    /* Notif end */
+    /* SEARCH */
+    input.search{
+        width: 400px !important;
+        margin-right: 10px;
+    }
+    /* SEARCH END */
+    /* User */
+    #user{
+        position: relative;
+        margin: 5px;
+        padding: 10px;
+    }
+    /* UserEnd */
+    /* navbar-auth end */
+    /* NAVBAR END */
+    /* Container */
+    .content{
+        max-width: 100%;
+        max-height: 100%;
+        color: white;
+        padding: 30px;
+    }
+    span{
+        text-align: justify ;
+    }
+    /* Container End */
+}
