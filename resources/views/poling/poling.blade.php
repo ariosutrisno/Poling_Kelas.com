@@ -61,31 +61,84 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <h1>
-                        <span>
+                    <div class="text-judul">
+                        <span id="judul">
                             Chapter 1 : Apa Pendapatmu?
                         </span>
-                    </h1>
-                    <span>
-                        Tahun -tahun ini menjadi era yang sangat berat bagi kita semua,
-                        banyak industri yang terdampak salah satunya industri Wedding ini,
-                        nah menurutmu hal apa yang perlu diprioritaskan oleh Wedding Organizer di masa pandemik ini?
-                    </span>
-                    <div class="row">
-                        <div class="col-8">
-                            <h1>colom</h1>
+                    </div>
+                    <div class="text-isi">
+                        <span id="isi">
+                            Tahun -tahun ini menjadi era yang sangat berat bagi kita semua,
+                            banyak industri yang terdampak salah satunya industri Wedding ini,
+                            nah menurutmu hal apa yang perlu diprioritaskan oleh Wedding Organizer di masa pandemik ini?
+                        </span>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <div class="progress" id="progress-satu">
+                                <label for="progress-loadSatu" id="label1">Fokus Ke Acara Pernikahan Online</label>
+                                <div class="progress-bar" id="progress-loadSatu" role="progressbar" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <label for="progress-loadSatu" id="label2">10%</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <h1>colom</h1>
+                        <div class="col-6">
+                            <div class="progress" id="progress-dua">
+                                <label for="progress-loadSatu" id="label1">Tunggu PPKM selesai</label>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <label for="progress-loadSatu" id="label2">10%</label>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-6 mt-5">
+                            <div class="progress" id="progress-tiga">
+                                <label for="progress-loadSatu" id="label1">Buat bisnis baru</label>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <label for="progress-loadSatu" id="label2">10%</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="progress" id="progress-empat">
+                                <label for="progress-loadSatu" id="label1">Menawarkan Hybrid Wedding</label>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                    aria-valuemax="100">
+
+                                    <label for="progress-loadSatu" id="label2">10%</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="progress" id="progress-lima">
+                                <label for="progress-loadSatu" id="label1">Pindah Kota yang PPKM-nya tidak
+                                    ketat</label>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <label for="progress-loadSatu" id="label2">10%</label>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-4">
-                    <h1>
-                        <span>
-                            Pre-test
-                        </span>
-                    </h1>
+                <div class="col-4 pl-5">
+                    <div class="card" style="width: 18rem;background-color:blue">
+                        <div class="card-header">
+                            <h3>
+                                <span>
+                                    Pre-test
+                                </span>
+                            </h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-danger">Cras justo odio</li>
+                            <li class="list-group-item bg-danger">Vestibulum at eros</li>
+                            <li class="list-group-item bg-danger">Dapibus ac facilisis in</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

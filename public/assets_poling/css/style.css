@@ -52,6 +52,7 @@
     /* UserEnd */
     /* navbar-auth end */
     /* NAVBAR END */
+    /* ============================ */
     /* Container */
     .content{
         max-width: 100%;
@@ -59,8 +60,51 @@
         color: white;
         padding: 30px;
     }
-    span{
-        text-align: justify ;
+    
+    span#judul{
+        text-align: justify;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: normal;
+        font-family: 'Montserrat';
     }
+    span#isi{
+        text-align: justify;
+        font-size: 20px;
+        font-style: normal;
+        font-family: 'Montserrat';
+    }
+    /* PROGRESS BAR */
+    #progress-satu,
+    #progress-dua,
+    #progress-tiga,
+    #progress-empat,
+    #progress-lima
+    {
+        background-color: #1F2D35;
+        height: 40px;
+    }
+    #progress-loadSatu{
+        width: 10%;
+    }
+    label#label1{
+        background-color: transparent;
+        position: absolute;
+        margin: 20px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+    }
+    label#label2{
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        background-color: transparent;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    /* PROGRESS BAR END */
     /* Container End */
 }
