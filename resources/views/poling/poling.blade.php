@@ -11,7 +11,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" id="navbar-kategori">
+            <ul class="navbar-nav" id="navbar-kategori">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                         aria-expanded="false">
@@ -22,40 +22,15 @@
                         <a class="dropdown-item" href="#">Another action</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pl-3">
                     <a class="nav-link" href="#">Prakerja</a>
                 </li>
-                <li class="nav-item" style="margin-left: 12px">
+                <li class="nav-item pl-3">
                     <a class="nav-link" href="#">Kelas Saya</a>
                 </li>
             </ul>
         </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" id="navbar-auth">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control search" type="search" placeholder="Search" aria-label="Search">
-                </form>
-                <div class="pull-right" id="bell">
-                    <i class="fa fa-bell-o fa-3px bell" aria-hidden="true"></i>
-                </div>
-                <div class="pull-right pt-1">
-                    <img src="{{ asset('img_poling/user.png') }}" width="50px" alt="">
-                </div>
-                <div class="pull-right" id="user">
-                    <ul class="nav pull-right">
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome, User
-                                <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/user/preferences"><i class="icon-cog"></i> Preferences</a></li>
-                                <li><a href="/help/support"><i class="icon-envelope"></i> Contact Support</a></li>
-                                <li class="divider"></li>
-                                <li><a href="/auth/logout"><i class="icon-off"></i> Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </ul>
-        </div>
+        @include('poling.poling_user')
     </nav>
     <div class="content">
         <div class="container">
