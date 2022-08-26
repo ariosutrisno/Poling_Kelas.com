@@ -3,6 +3,12 @@
     margin: 0;
     background-color: #121A1F;
 }
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../Montserrat/static/Montserrat-Regular.ttf');
+	src: url('../Montserrat/static/Montserrat-Regular.ttf') format('ttf'),
+	     url('../Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+}
 /* NAVBAR */
 @media(max-width: 2000px){
     nav.back-navbar{
@@ -20,7 +26,7 @@
     }
     #navbar-kategori .nav-link{
         color: white;
-        font-family: sans-serif;
+        font-family: 'Montserrat';
         font-size: 18px;
     }
     /* navbar-auth */
@@ -82,7 +88,7 @@
     #progress-lima
     {
         background-color: #1F2D35;
-        height: 40px;
+        height: 50px;
     }
     #progress-loadSatu{
         width: 10%;
@@ -90,14 +96,14 @@
     label#label1{
         background-color: transparent;
         position: absolute;
-        margin: 20px;
+        margin: 25px;
         font-family: 'Montserrat';
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
     }
     label#label2{
         font-family: 'Montserrat';
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         background-color: transparent;
         position: absolute;
@@ -106,5 +112,25 @@
         margin-bottom: auto;
     }
     /* PROGRESS BAR END */
+    /* CONTENT SIDE TWO */
+    #pre-judul{
+        width: 18rem;
+        background-color:#1F2D35;
+        border-radius: 2%;
+    }
+    span#text-pre{
+        background-color: transparent;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        font-style: normal;
+    }
+    #span-1{
+        font-weight: bold;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 14px;
+    }
+    /* CONTENT SIDE TWO END */
     /* Container End */
 }

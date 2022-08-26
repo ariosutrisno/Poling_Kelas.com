@@ -85,7 +85,7 @@
                         </div>
                         <div class="col-6">
                             <div class="progress" id="progress-dua">
-                                <label for="progress-loadSatu" id="label1">Tunggu PPKM selesai</label>
+                                <label for="progress-loadSatu" id="label1">Menawarkan Hybrid Wedding</label>
                                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                     aria-valuemax="100">
                                     <label for="progress-loadSatu" id="label2">10%</label>
@@ -94,7 +94,7 @@
                         </div>
                         <div class="col-6 mt-5">
                             <div class="progress" id="progress-tiga">
-                                <label for="progress-loadSatu" id="label1">Buat bisnis baru</label>
+                                <label for="progress-loadSatu" id="label1">Tunggu PPKM selesai </label>
                                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                     aria-valuemax="100">
                                     <label for="progress-loadSatu" id="label2">10%</label>
@@ -103,7 +103,8 @@
                         </div>
                         <div class="col-6 mt-5">
                             <div class="progress" id="progress-empat">
-                                <label for="progress-loadSatu" id="label1">Menawarkan Hybrid Wedding</label>
+                                <label for="progress-loadSatu" id="label1">Pindah Kota yang PPKM-nya tidak
+                                    ketat</label>
                                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                     aria-valuemax="100">
 
@@ -113,8 +114,7 @@
                         </div>
                         <div class="col-6 mt-5">
                             <div class="progress" id="progress-lima">
-                                <label for="progress-loadSatu" id="label1">Pindah Kota yang PPKM-nya tidak
-                                    ketat</label>
+                                <label for="progress-loadSatu" id="label1">Buat bisnis baru</label>
                                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                     aria-valuemax="100">
                                     <label for="progress-loadSatu" id="label2">10%</label>
@@ -125,19 +125,114 @@
                     </div>
                 </div>
                 <div class="col-4 pl-5">
-                    <div class="card" style="width: 18rem;background-color:blue">
+                    <div class="card" id="pre-judul">
                         <div class="card-header">
-                            <h3>
-                                <span>
-                                    Pre-test
-                                </span>
-                            </h3>
+                            <div class="row" style="background-color: transparent">
+                                <div class="col-6" style="background-color: transparent">
+                                    <span id="text-pre">
+                                        Pre-test
+                                    </span>
+                                </div>
+                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                    <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
+                                        alt="vektor-1" style="background-color: transparent">
+                                </div>
+                            </div>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-danger">Cras justo odio</li>
-                            <li class="list-group-item bg-danger">Vestibulum at eros</li>
-                            <li class="list-group-item bg-danger">Dapibus ac facilisis in</li>
+                            <li class="list-group-item" style="background-color:#121A1F ">
+                                <div class="row" style="background-color: transparent">
+                                    <div class="col-2" style="background-color: transparent;">
+                                        <img src="{{ asset('img_poling/pre-test.png') }}" alt="pre-test">
+                                    </div>
+                                    <div class="col-10" style="background-color: transparent;padding:2px">
+                                        <span id="span-1">
+                                            Akses Pre-test
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
+                        <div class="card-header">
+                            <div class="row" style="background-color: transparent">
+                                <div class="col-6" style="background-color: transparent">
+                                    <span id="text-pre">
+                                        Pre-test
+                                    </span>
+                                </div>
+                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                    <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
+                                        alt="vektor-1" style="background-color: transparent">
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="background-color:#121A1F ">
+                                <div class="row" style="background-color: transparent">
+                                    <div class="col-2" style="background-color: transparent;">
+                                        <img src="{{ asset('img_poling/play.png') }}" alt="pre-test">
+                                    </div>
+                                    <div class="col-10" style="background-color: transparent;padding:2px">
+                                        <span id="span-1">
+                                            Perkenalan
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-header">
+                            <div class="row" style="background-color: transparent">
+                                <div class="col-6" style="background-color: transparent">
+                                    <span id="text-pre">
+                                        Pre-test
+                                    </span>
+                                </div>
+                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                    <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
+                                        alt="vektor-1" style="background-color: transparent">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <div class="row" style="background-color: transparent">
+                                <div class="col-6" style="background-color: transparent">
+                                    <span id="text-pre">
+                                        Pre-test
+                                    </span>
+                                </div>
+                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                    <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
+                                        alt="vektor-1" style="background-color: transparent">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <div class="row" style="background-color: transparent">
+                                <div class="col-6" style="background-color: transparent">
+                                    <span id="text-pre">
+                                        Pre-test
+                                    </span>
+                                </div>
+                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                    <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
+                                        alt="vektor-1" style="background-color: transparent">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <div class="row" style="background-color: transparent">
+                                <div class="col-6" style="background-color: transparent">
+                                    <span id="text-pre">
+                                        Pre-test
+                                    </span>
+                                </div>
+                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                    <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
+                                        alt="vektor-1" style="background-color: transparent">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
