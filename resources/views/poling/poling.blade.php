@@ -145,12 +145,14 @@
                                     <div class="col-2" style="background-color: transparent;">
                                         <img src="{{ asset('img_poling/pre-test.png') }}" alt="pre-test">
                                     </div>
-                                    <div class="col-10" style="background-color: transparent;padding:2px">
+                                    <div class="col-8" style="background-color: transparent;">
                                         <span id="span-1">
                                             Akses Pre-test
                                         </span>
                                     </div>
-                                </div>
+                                    <div class="col-2 pl-1" style="background-color: transparent;">
+                                        <img src="{{ asset('img_poling/ceklis.png') }}" alt="pre-test">
+                                    </div>
                             </li>
                         </ul>
                         <div class="card-header">
@@ -184,22 +186,57 @@
                                     <div class="col-2" style="background-color: transparent;">
                                         <img src="{{ asset('img_poling/play.png') }}" alt="pre-test">
                                     </div>
-                                    <div class="col-10" style="background-color: transparent;padding:2px">
+                                    <div class="col-8" style="background-color: transparent;padding:2px">
                                         <span id="span-1">
                                             Perkenalan
                                         </span>
+                                    </div>
+                                    <div class="col-2" style="background-color: transparent;padding:2px">
+                                        <img src="{{ asset('img_poling/ceklis.png') }}" alt="pre-test">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" style="background-color:#4A90E2 ">
+                                <div class="row" style="background-color: transparent">
+                                    <div class="col-2" style="background-color: transparent;">
+                                        <img src="{{ asset('img_poling/gg_poll.png') }}" alt="pre-test"
+                                            style="background-color: transparent;">
+                                    </div>
+                                    <div class="col-8" style="background-color: transparent;padding:2px">
+                                        <span id="span-1">
+                                            Apa Pendapatmu
+                                        </span>
+                                    </div>
+                                    <div class="col-2" style="background-color: transparent;padding:2px">
+                                        <img src="{{ asset('img_poling/ceklis.png') }}"
+                                            style="background-color: transparent;" alt="pre-test">
                                     </div>
                                 </div>
                             </li>
                         </ul>
                         <div class="card-header">
                             <div class="row" style="background-color: transparent">
-                                <div class="col-6" style="background-color: transparent">
+                                <div class="col-10" style="background-color: transparent">
                                     <span id="text-pre">
-                                        Apa Pendapatmu
+                                        Chapter 2 : Perbedaan Makeup sesuai Acara
                                     </span>
+                                    <br>
+                                    <div class="row mt-4" style="background-color: transparent">
+                                        <div class="col-8" style="background-color: transparent">
+                                            <img src="{{ asset('img_poling/Vector (2).png') }}"
+                                                style="background-color: transparent" alt="play">
+                                            2 Subchapter
+                                        </div>
+                                        <div class="col-4" style="background-color: transparent;">
+                                            <img src="{{ asset('img_poling/Vector-1.png') }}"
+                                                style="background-color: transparent" alt="play">
+                                            12:00
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                <div class="col-2" style="background-color: transparent;padding-left: 1% ">
                                     <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
                                         alt="vektor-1" style="background-color: transparent">
                                 </div>
@@ -207,12 +244,25 @@
                         </div>
                         <div class="card-header">
                             <div class="row" style="background-color: transparent">
-                                <div class="col-6" style="background-color: transparent">
+                                <div class="col-10" style="background-color: transparent">
                                     <span id="text-pre">
-                                        Pre-test
+                                        Chapter 3 : Ragam Beauty Product
                                     </span>
+                                    <br>
+                                    <div class="row mt-4" style="background-color: transparent">
+                                        <div class="col-8" style="background-color: transparent">
+                                            <img src="{{ asset('img_poling/Vector (2).png') }}"
+                                                style="background-color: transparent" alt="play">
+                                            2 Subchapter
+                                        </div>
+                                        <div class="col-4" style="background-color: transparent;">
+                                            <img src="{{ asset('img_poling/Vector-1.png') }}"
+                                                style="background-color: transparent" alt="play">
+                                            12:00
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                <div class="col-2" style="background-color: transparent; padding-left:1%">
                                     <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
                                         alt="vektor-1" style="background-color: transparent">
                                 </div>
@@ -220,31 +270,30 @@
                         </div>
                         <div class="card-header">
                             <div class="row" style="background-color: transparent">
-                                <div class="col-6" style="background-color: transparent">
+                                <div class="col-10" style="background-color: transparent">
                                     <span id="text-pre">
-                                        Pre-test
+                                        Chapter 4 : Mengenal Beauty Tools
                                     </span>
+                                    <br>
+                                    <div class="row mt-4" style="background-color: transparent">
+                                        <div class="col-8" style="background-color: transparent">
+                                            <img src="{{ asset('img_poling/Vector (2).png') }}"
+                                                style="background-color: transparent" alt="play">
+                                            2 Subchapter
+                                        </div>
+                                        <div class="col-4" style="background-color: transparent;">
+                                            <img src="{{ asset('img_poling/Vector-1.png') }}"
+                                                style="background-color: transparent" alt="play">
+                                            12:00
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                <div class="col-2" style="background-color: transparent; padding-left:1%">
                                     <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
                                         alt="vektor-1" style="background-color: transparent">
                                 </div>
                             </div>
                         </div>
-                        <div class="card-header">
-                            <div class="row" style="background-color: transparent">
-                                <div class="col-6" style="background-color: transparent">
-                                    <span id="text-pre">
-                                        Pre-test
-                                    </span>
-                                </div>
-                                <div class="col-6" style="background-color: transparent; padding-left:35%">
-                                    <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
-                                        alt="vektor-1" style="background-color: transparent">
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
