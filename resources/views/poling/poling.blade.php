@@ -155,12 +155,24 @@
                         </ul>
                         <div class="card-header">
                             <div class="row" style="background-color: transparent">
-                                <div class="col-6" style="background-color: transparent">
+                                <div class="col-10" style="background-color: transparent">
                                     <span id="text-pre">
-                                        Pre-test
-                                    </span>
+                                        Chapter 1 : Perkenalan
+                                    </span><br>
+                                    <div class="row mt-4" style="background-color: transparent">
+                                        <div class="col-8" style="background-color: transparent">
+                                            <img src="{{ asset('img_poling/Vector (2).png') }}"
+                                                style="background-color: transparent" alt="play">
+                                            1 Subchapter
+                                        </div>
+                                        <div class="col-4" style="background-color: transparent">
+                                            <img src="{{ asset('img_poling/Vector-1.png') }}"
+                                                style="background-color: transparent" alt="play">
+                                            6:00
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-6" style="background-color: transparent; padding-left:35%">
+                                <div class="col-2" style="background-color: transparent;padding-left: 1%">
                                     <img src="{{ asset('img_poling/Vector.png') }}" width="20px" height="10px"
                                         alt="vektor-1" style="background-color: transparent">
                                 </div>
@@ -184,7 +196,7 @@
                             <div class="row" style="background-color: transparent">
                                 <div class="col-6" style="background-color: transparent">
                                     <span id="text-pre">
-                                        Pre-test
+                                        Apa Pendapatmu
                                     </span>
                                 </div>
                                 <div class="col-6" style="background-color: transparent; padding-left:35%">

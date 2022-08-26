@@ -114,13 +114,13 @@
     /* PROGRESS BAR END */
     /* CONTENT SIDE TWO */
     #pre-judul{
-        width: 18rem;
+        width: 22rem;
         background-color:#1F2D35;
         border-radius: 2%;
     }
     span#text-pre{
         background-color: transparent;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         font-family: 'Montserrat';
         font-style: normal;
