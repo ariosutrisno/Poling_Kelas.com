@@ -23,10 +23,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/poling', 'PolingController@index');
+Route::get('/register-user', 'AuthRegisterController@register')->name('register-user');
+Route::post('/register-user', 'AuthRegisterController@registerRequest')->name('registerRequest');
+Route::get('/login-user', 'AuthLoginController@login')->name('login-user');
+Route::post('/login-user', 'AuthLoginController@loginRequest')->name('loginRequest');
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('/poling', 'PolingController@index')->name('poling');
 });

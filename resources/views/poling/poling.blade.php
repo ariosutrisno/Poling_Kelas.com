@@ -274,4 +274,9 @@
             </div>
         </div>
     </div>
+    <script>
+        function input_bar(data) {
+
+        }
+    </script>
 @endsection
