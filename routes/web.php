@@ -15,18 +15,16 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('poling.Auth_Poling.login');
+// });
 
+// Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/register-user', 'AuthRegisterController@register')->name('register-user');
 Route::post('/register-user', 'AuthRegisterController@registerRequest')->name('registerRequest');
 Route::get('/login-user', 'AuthLoginController@login')->name('login-user');
 Route::post('/login-user', 'AuthLoginController@loginRequest')->name('loginRequest');
-Route::group(['middleware' => ['auth']], function () {
-    Route::get('/poling', 'PolingController@index')->name('poling');
+Route::group(['middleware' => ['poling-user']], function () {
+    Route::get('/', 'PolingController@index')->name('poling');
 });

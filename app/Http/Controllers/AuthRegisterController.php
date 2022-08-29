@@ -17,7 +17,7 @@ class AuthRegisterController extends Controller
     }
     public function __construct()
     {
-        $this->middleware('poling');
+        $this->middleware('guest');
     }
     public function registerRequest(Request $request)
     {

@@ -58,7 +58,7 @@
                 data: check_data,
                 success: function(response) {
                     if (response.message) {
-                        window.location.assign('poling');
+                        window.location.assign('/');
                     }
                 },
                 error: function(response) {

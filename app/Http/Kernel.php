@@ -41,6 +41,9 @@ class Kernel extends HttpKernel
             'throttle:60,1',
             'bindings',
         ],
+        'poling-user' => [
+            \App\Http\Middleware\poling::class
+        ]
     ];
 
     /**
@@ -59,6 +62,6 @@ class Kernel extends HttpKernel
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'poling' => \App\Http\Middleware\poling::class
+        'poling-user' => \App\Http\Middleware\poling::class,
     ];
 }
