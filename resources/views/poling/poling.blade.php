@@ -57,41 +57,44 @@
                                     <div class="progress-bar" id="progress-loadSatu" role="progressbar"></div>
                                     <label for="progress-loadSatu" id="label2"></label>
                                     <input type="text" value="Fokus Ke Acara Pernikahan Online" name="bar_one" hidden>
-                                    <input type="text" value="{{ old('persentase') }}" name="persentase" hidden>
                                 </div>
                             </div>
                             <div class="col-6" id="cek1">
-                                <div class="progress" id="progress-dua">
+                                <div class="progress" id="progress-dua" onclick="move1()">
                                     <label for="progress-loadDua" id="label1">Menawarkan Hybrid Wedding</label>
                                     <div class="progress-bar" id="progress-loadDua" role="progressbar" aria-valuenow="0"
-                                        aria-valuemin="0" aria-valuemax="100" style="width: 10%" name="bar_two">
+                                        aria-valuemin="0" aria-valuemax="100" name="bar_two">
                                     </div>
+                                    <label for="progress-loadSatu" id="label2_1"></label>
                                 </div>
                             </div>
                             <div class="col-6 mt-5" id="cek2">
-                                <div class="progress" id="progress-tiga">
+                                <div class="progress" id="progress-tiga" onclick="move2()">
                                     <label for="progress-loadTiga" id="label1">Tunggu PPKM selesai </label>
                                     <div class="progress-bar" id="progress-loadTiga" role="progressbar" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100">
                                     </div>
+                                    <label for="progress-loadSatu" id="label2_2"></label>
                                 </div>
                             </div>
                             <div class="col-6 mt-5" id="cek3">
-                                <div class="progress" id="progress-empat">
+                                <div class="progress" id="progress-empat" onclick="move3()">
                                     <label for="progress-loadEmpat" id="label1">Pindah Kota yang PPKM-nya tidak
                                         ketat</label>
                                     <div class="progress-bar" id="progress-loadEmpat" role="progressbar" aria-valuenow="0"
                                         aria-valuemin="0" aria-valuemax="100">
                                     </div>
+                                    <label for="progress-loadSatu" id="label2_3"></label>
                                 </div>
                             </div>
-                            <div class="col-6 mt-5" id="cek4">
+                            <div class="col-6 mt-5" id="cek4" onclick="move4()">
                                 <div class="progress" id="progress-lima">
                                     <label for="progress-loadLima" id="label1">Buat bisnis baru</label>
                                     <div class="progress-bar" id="progress-loadLima" role="progressbar"
                                         aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
+                                <label for="progress-loadSatu" id="label2_4"></label>
                             </div>
                         </div>
                     </form>
@@ -273,6 +276,10 @@
     </div>
     <script type="text/javascript">
         document.getElementById('cek').style.cursor = 'pointer'
+        document.getElementById('cek1').style.cursor = 'pointer'
+        document.getElementById('cek2').style.cursor = 'pointer'
+        document.getElementById('cek3').style.cursor = 'pointer'
+        document.getElementById('cek4').style.cursor = 'pointer'
         var i = 0;
 
         function move() {
@@ -280,6 +287,98 @@
                 i = 1;
                 var elem = document.getElementById("progress-loadSatu");
                 var elem1 = document.getElementById("label2");
+                var width = 0;
+                var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        i = 0;
+                    } else {
+                        width++;
+                        elem.style.width = width + "%";
+                        elem1.style.width = width + "%";
+                        elem.innerHTML
+                        elem1.innerHTML = width + "%";
+                    }
+                }
+            }
+        }
+
+        function move1() {
+            if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("progress-loadDua");
+                var elem1 = document.getElementById("label2_1");
+                var width = 0;
+                var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        i = 0;
+                    } else {
+                        width++;
+                        elem.style.width = width + "%";
+                        elem1.style.width = width + "%";
+                        elem.innerHTML
+                        elem1.innerHTML = width + "%";
+                    }
+                }
+            }
+        }
+
+        function move2() {
+            if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("progress-loadTiga");
+                var elem1 = document.getElementById("label2_2");
+                var width = 0;
+                var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        i = 0;
+                    } else {
+                        width++;
+                        elem.style.width = width + "%";
+                        elem1.style.width = width + "%";
+                        elem.innerHTML
+                        elem1.innerHTML = width + "%";
+                    }
+                }
+            }
+        }
+
+        function move3() {
+            if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("progress-loadEmpat");
+                var elem1 = document.getElementById("label2_3");
+                var width = 0;
+                var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        i = 0;
+                    } else {
+                        width++;
+                        elem.style.width = width + "%";
+                        elem1.style.width = width + "%";
+                        elem.innerHTML
+                        elem1.innerHTML = width + "%";
+                    }
+                }
+            }
+        }
+
+        function move4() {
+            if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("progress-loadLima");
+                var elem1 = document.getElementById("label2_4");
                 var width = 0;
                 var id = setInterval(frame, 10);
 
