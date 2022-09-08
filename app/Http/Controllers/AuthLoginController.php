@@ -36,7 +36,7 @@ class AuthLoginController extends Controller
             # code...
             return response()->json([
                 'success' => true,
-                'message' => 'berhasil login'
+                'message' => 'berhasil login',
             ], 200);
         } else {
             return response()->json([

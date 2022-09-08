@@ -47,6 +47,7 @@
     </div>
     <script src="{{ asset('assets_poling/js/jquery-3.6.1.min.js') }}"></script>
     <script src="{{ asset('assets_poling/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets_poling/js/sweetalert2.all.min.js') }}"></script>
     <script>
         $('.btnLogin').click(function() {
             let check_data = $('#form-login').serialize()
@@ -58,6 +59,12 @@
                 data: check_data,
                 success: function(response) {
                     if (response.message) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Berhasil Login.',
+                            showCancelButton: false,
+                            showConfirmButton: false
+                        })
                         window.location.assign('/');
                     }
                 },

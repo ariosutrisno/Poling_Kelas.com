@@ -75,35 +75,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
     <script>
         $('.btnRegister').click(function() {
-            let check_data = $('#form-register').serialize()
-            $.ajax({
-                url: "{{ route('registerRequest') }}",
-                type: "POST",
-                dataType: "JSON",
-                cache: false,
-                data: check_data,
-                success: function(response) {
-                    if (response.message) {
-                        window.location.href = "{{ route('poling') }}";
-                    }
-                },
-                error: function(response) {
-                    $('#first_nameError').text(response.responseJSON.errors.first_name)
-                    $('#first_name').css('border-color', 'red')
-                    $('#last_nameError').text(response.responseJSON.errors.last_name)
-                    $('#last_name').css('border-color', 'red')
-                    $('#phone_userError').text(response.responseJSON.errors.phone_user)
-                    $('#phone_user').css('border-color', 'red')
-                    $('#emai_Error').text(response.responseJSON.errors.email)
-                    $('#email').css('border-color', 'red')
-                    $('#passwordError').text(response.responseJSON.errors.password)
-                    $('#password').css('border-color', 'red')
-                    $('#password_confirmError').text(response.responseJSON.errors.password_confirm)
-                    $('#password_confirm').css('border-color', 'red')
-                }
-            })
+                    let check_data = $('#form-register').serialize()
+                    $.ajax({
+                            url: "{{ route('registerRequest') }}",
+                            type: "POST",
+                            dataType: "JSON",
+                            cache: false,
+                            data: check_data,
+                            success: function(response) {
+                                if (response.message) {
+                                    if (response.message) {
+                                        Swal.fire({
+                                            icon: 'success',
+                                            title: 'Register Berhasil.',
+                                            showCancelButton: false,
+                                            showConfirmButton: false
+                                        })
+                                        window.location.href = "{{ route('poling') }}";
+                                    }
+                                },
+                                error: function(response) {
+                                    $('#first_nameError').text(response.responseJSON.errors.first_name)
+                                    $('#first_name').css('border-color', 'red')
+                                    $('#last_nameError').text(response.responseJSON.errors.last_name)
+                                    $('#last_name').css('border-color', 'red')
+                                    $('#phone_userError').text(response.responseJSON.errors.phone_user)
+                                    $('#phone_user').css('border-color', 'red')
+                                    $('#emai_Error').text(response.responseJSON.errors.email)
+                                    $('#email').css('border-color', 'red')
+                                    $('#passwordError').text(response.responseJSON.errors.password)
+                                    $('#password').css('border-color', 'red')
+                                    $('#password_confirmError').text(response.responseJSON.errors
+                                        .password_confirm)
+                                    $('#password_confirm').css('border-color', 'red')
+                                }
+                            })
 
-        })
+                    })
     </script>
 </body>
 

@@ -9,10 +9,10 @@ use Illuminate\Support\Facades\Auth;
 
 class PolingController extends Controller
 {
-    // public function __construct()
-    // {
-    //     $this->middleware('poling-user');
-    // }
+    public function __construct()
+    {
+        $this->middleware('poling-user');
+    }
     public function index()
     {
         $poling_user = Poling::with('user')->get();
