@@ -81,6 +81,7 @@
         font-family: 'Montserrat';
     }
     /* PROGRESS BAR */
+    
     #progress-satu,
     #progress-dua,
     #progress-tiga,
@@ -89,9 +90,6 @@
     {
         background-color: #1F2D35;
         height: 50px;
-    }
-    #progress-loadSatu{
-        width: 10%;
     }
     label#label1{
         background-color: transparent;
@@ -108,7 +106,7 @@
         background-color: transparent;
         position: absolute;
         margin-left: 80%;
-        margin-top: auto;
+        margin-top: 6.5%;
         margin-bottom: auto;
     }
     /* PROGRESS BAR END */

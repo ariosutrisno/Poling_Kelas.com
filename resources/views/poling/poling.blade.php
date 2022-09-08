@@ -48,56 +48,53 @@
                             nah menurutmu hal apa yang perlu diprioritaskan oleh Wedding Organizer di masa pandemik ini?
                         </span>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-6">
-                            <div class="progress" id="progress-satu">
-                                <label for="progress-loadSatu" id="label1">Fokus Ke Acara Pernikahan Online</label>
-                                <div class="progress-bar" id="progress-loadSatu" role="progressbar" aria-valuenow="0"
-                                    aria-valuemin="0" aria-valuemax="100">
-                                    <label for="progress-loadSatu" id="label2">10%</label>
+                    <form id="form-poling">
+                        @csrf
+                        <div class="row mt-5">
+                            <div class="col-6" id="cek" onclick="move()">
+                                <div class="progress" id="progress-satu">
+                                    <label for="progress-loadSatu" id="label1">Fokus Ke Acara Pernikahan Online</label>
+                                    <div class="progress-bar" id="progress-loadSatu" role="progressbar"></div>
+                                    <label for="progress-loadSatu" id="label2"></label>
+                                    <input type="text" value="Fokus Ke Acara Pernikahan Online" name="bar_one" hidden>
+                                    <input type="text" value="{{ old('persentase') }}" name="persentase" hidden>
+                                </div>
+                            </div>
+                            <div class="col-6" id="cek1">
+                                <div class="progress" id="progress-dua">
+                                    <label for="progress-loadDua" id="label1">Menawarkan Hybrid Wedding</label>
+                                    <div class="progress-bar" id="progress-loadDua" role="progressbar" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 10%" name="bar_two">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-5" id="cek2">
+                                <div class="progress" id="progress-tiga">
+                                    <label for="progress-loadTiga" id="label1">Tunggu PPKM selesai </label>
+                                    <div class="progress-bar" id="progress-loadTiga" role="progressbar" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-5" id="cek3">
+                                <div class="progress" id="progress-empat">
+                                    <label for="progress-loadEmpat" id="label1">Pindah Kota yang PPKM-nya tidak
+                                        ketat</label>
+                                    <div class="progress-bar" id="progress-loadEmpat" role="progressbar" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-5" id="cek4">
+                                <div class="progress" id="progress-lima">
+                                    <label for="progress-loadLima" id="label1">Buat bisnis baru</label>
+                                    <div class="progress-bar" id="progress-loadLima" role="progressbar"
+                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="progress" id="progress-dua">
-                                <label for="progress-loadSatu" id="label1">Menawarkan Hybrid Wedding</label>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                    aria-valuemax="100">
-                                    <label for="progress-loadSatu" id="label2">10%</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 mt-5">
-                            <div class="progress" id="progress-tiga">
-                                <label for="progress-loadSatu" id="label1">Tunggu PPKM selesai </label>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                    aria-valuemax="100">
-                                    <label for="progress-loadSatu" id="label2">10%</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 mt-5">
-                            <div class="progress" id="progress-empat">
-                                <label for="progress-loadSatu" id="label1">Pindah Kota yang PPKM-nya tidak
-                                    ketat</label>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                    aria-valuemax="100">
-
-                                    <label for="progress-loadSatu" id="label2">10%</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 mt-5">
-                            <div class="progress" id="progress-lima">
-                                <label for="progress-loadSatu" id="label1">Buat bisnis baru</label>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                                    aria-valuemax="100">
-                                    <label for="progress-loadSatu" id="label2">10%</label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    </form>
                 </div>
                 <div class="col-4 pl-5">
                     <div class="card" id="pre-judul">
@@ -274,9 +271,31 @@
             </div>
         </div>
     </div>
-    <script>
-        function input_bar(data) {
+    <script type="text/javascript">
+        document.getElementById('cek').style.cursor = 'pointer'
+        var i = 0;
 
+        function move() {
+            if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("progress-loadSatu");
+                var elem1 = document.getElementById("label2");
+                var width = 0;
+                var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        i = 0;
+                    } else {
+                        width++;
+                        elem.style.width = width + "%";
+                        elem1.style.width = width + "%";
+                        elem.innerHTML
+                        elem1.innerHTML = width + "%";
+                    }
+                }
+            }
         }
     </script>
 @endsection

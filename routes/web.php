@@ -25,6 +25,8 @@ Route::get('/register-user', 'AuthRegisterController@register')->name('register-
 Route::post('/register-user', 'AuthRegisterController@registerRequest')->name('registerRequest');
 Route::get('/login-user', 'AuthLoginController@login')->name('login-user');
 Route::post('/login-user', 'AuthLoginController@loginRequest')->name('loginRequest');
+Route::get('/{user_id_poling}', 'PolingController@show')->name('polingshow');
+Route::get('/', 'PolingController@index')->name('poling');
+Route::post('/post', 'PolingController@save_poling')->name('Postpoling');
 Route::group(['middleware' => ['poling-user']], function () {
-    Route::get('/', 'PolingController@index')->name('poling');
 });

@@ -26,4 +26,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token', 'password_confirm'
     ];
+
+    public function poling_user()
+    {
+        return $this->hasMany('App\User', 'id', 'id');
+    }
 }
